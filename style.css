@@ -14,6 +14,7 @@ p {
 
 img {
   width: 100%;
+  display: block;
 }
 
 body {
@@ -26,12 +27,10 @@ figure {
   margin: 0;
 }
 
-/*section styles*/
 main > article > section {
   padding: 65px 20px;
 }
 
-/*card styles*/
 .card {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -43,11 +42,9 @@ main > article > section {
   padding: 20px;
 }
 
-/* header*/
-
 main > article > header {
   background-color: black;
-  padding: 0 20px;
+  padding: 0 0px;
   height: calc(100vh - 80%);
 }
 @media (min-width: 768px) {
@@ -60,10 +57,9 @@ main > article > header {
     margin-right: 80px;
   }
 }
-/*grid styles*/
 
 .grid-1-2 {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 1fr;
   margin-left: 0;
   margin-right: 0;
@@ -72,6 +68,7 @@ main > article > header {
   margin-right: 0px;
   margin-bottom: 0px;
   padding: 0 0 0 0;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -80,7 +77,6 @@ main > article > header {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-/*Nav Bar*/
 
 nav {
   height: 80px;
@@ -88,4 +84,13 @@ nav {
 nav > a > img {
   height: 70px;
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .grid-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
