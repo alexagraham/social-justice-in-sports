@@ -94,3 +94,14 @@ nav > a > img {
     margin-right: 0;
   }
 }
+
+.sixteen-by-nine {
+  padding-right: 80px;
+  position: relative;
+}
+
+.sixteen-by-nine > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
